@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        .met {
+            color: green;
+            margin-right: 10px;
+        }
+
+        .not-met {
+            color: red;
+            margin-right: 10px;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        .login-container {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            max-width: 80%;
+        }
+
+        .login-container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .login-container label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .login-container input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-container input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .login-container input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+
+        .requirements {
+            margin-top: 10px;
+            font-size: 0.9em;
+        }
+
+        .requirements ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .requirements li {
+            margin-bottom: 5px;
+        }
+
+        .met {
+            color: green;
+            margin-right: 10px;
+        }
+
+        .not-met {
+            color: red;
+            margin-right: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Login Page</h1>
+    {% if error %}
+    <p style="color: red;">{{ error }}</p>
+    {% endif %}
+    <form method="POST">
+        <label for="username">Username:</label><br>
+        <input type="text" id="username" name="username"><br>
+        <label for="password">Password:</label><br>
+        <input type="password" id="password" name="password" required onkeyup="checkPasswordStrength(this.value)"><br>
+        <div id="password-requirements">
+            <p>Password must meet the following requirements:</p>
+            <ul>
+                <li id="length-requirement"><span class="not-met">❌</span> At least 8 characters long</li>
+                <li id="uppercase-requirement"><span class="not-met">❌</span> Contain at least one uppercase letter</li>
+                <li id="lowercase-requirement"><span class="not-met">❌</span> Contain at least one lowercase letter</li>
+                <li id="digit-requirement"><span class="not-met">❌</span> Contain at least one digit</li>
+                <li id="special-requirement"><span class="not-met">❌</span> Contain at least one special character
+                    (!@#$%^&*()-_+=[]{}|;:,.<>?/)</li>
+            </ul>
+        </div>
+        <br>
+        <input type="submit" name="login" value="Login">
+        <input type="submit" name="register" value="Register">
+    </form>
+    <br>
+    <a href="{{ url_for('view_logs') }}">View Login Attempt Logs</a>
+
+    <script>
+        function checkPasswordStrength(password) {
+            const lengthRequirement = document.getElementById('length-requirement');
+            const uppercaseRequirement = document.getElementById('uppercase-requirement');
+            const lowercaseRequirement = document.getElementById('lowercase-requirement');
+            const digitRequirement = document.getElementById('digit-requirement');
+            const specialRequirement = document.getElementById('special-requirement');
+
+            lengthRequirement.innerHTML = password.length >= 8 ? '<span class="met">✅</span> At least 8 characters long' : '<span class="not-met">❌</span> At least 8 characters long';
+            uppercaseRequirement.innerHTML = /[A-Z]/.test(password) ? '<span class="met">✅</span> Contain at least one uppercase letter' : '<span class="not-met">❌</span> Contain at least one uppercase letter';
+            lowercaseRequirement.innerHTML = /[a-z]/.test(password) ? '<span class="met">✅</span> Contain at least one lowercase letter' : '<span class="not-met">❌</span> Contain at least one lowercase letter';
+            digitRequirement.innerHTML = /\d/.test(password) ? '<span class="met">✅</span> Contain at least one digit' : '<span class="not-met">❌</span> Contain at least one digit';
+            specialRequirement.innerHTML = /[!@#$%^&*()\[\]{}|;:,.<>?/]/.test(password) ? '<span class="met">✅</span> Contain at least one special character' : '<span class="not-met">❌</span> Contain at least one special character';
+        }
+    </script>
+</body>
+
+</html>

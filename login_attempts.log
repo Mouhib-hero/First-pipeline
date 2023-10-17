@@ -1,0 +1,66 @@
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 118-462-061
+INFO:werkzeug: * Detected change in 'F:\\Users\\Lenovo\\Desktop\\TPs_RT5\\TP_devops\\FirstPipeline\\app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 118-462-061
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:48:44] "GET / HTTP/1.1" 200 -
+INFO:root:Login attempt for username: abc
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:48:48] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:48:50] "GET / HTTP/1.1" 200 -
+INFO:root:Login attempt for username: abc
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:48:52] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:48:54] "GET / HTTP/1.1" 200 -
+INFO:root:Login attempt for username: abc
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:48:56] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:48:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:49:01] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:49:03] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:53:02] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:53:54] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:54:00] "GET / HTTP/1.1" 200 -
+INFO:root:Login attempt for username: abc
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:54:01] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:54:03] "GET / HTTP/1.1" 200 -
+INFO:root:Login attempt for username: abc
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:54:05] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:54:07] "GET / HTTP/1.1" 200 -
+INFO:root:Login attempt for username: abc
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:54:24] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:54:24] "GET /welcome HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:54:27] "GET /welcome HTTP/1.1" 200 -
+INFO:root:Login attempt for username: a
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:55:51] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:55:53] "GET / HTTP/1.1" 200 -
+INFO:werkzeug: * Detected change in 'F:\\Users\\Lenovo\\Desktop\\TPs_RT5\\TP_devops\\FirstPipeline\\app.py', reloading
+WARNING:werkzeug: * Debugger is active!
+INFO:werkzeug: * Debugger PIN: 118-462-061
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:58:49] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:59:04] "GET /view_logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 17:59:12] "GET /view_logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 18:15:52] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 18:15:54] "GET /view_logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 18:26:14] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 18:26:22] "GET /view_logs HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [16/Oct/2023 20:40:58] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:27:24] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:27:26] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:27:29] "GET / HTTP/1.1" 200 -
+INFO:root:Login attempt for username: aladin
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:27:39] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:27:41] "GET / HTTP/1.1" 200 -
+INFO:root:Login attempt for username: aladin
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:27:54] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:27:56] "GET / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:28:05] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:28:07] "GET / HTTP/1.1" 200 -
+INFO:root:Login attempt for username: aladin
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:28:15] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:28:15] "GET /welcome HTTP/1.1" 200 -
+INFO:root:Login attempt for username: aladin
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:28:25] "POST / HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:28:27] "GET / HTTP/1.1" 200 -
+INFO:root:Login attempt for username: aladin
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:28:33] "[32mPOST / HTTP/1.1[0m" 302 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:28:33] "GET /welcome HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:28:35] "GET /welcome HTTP/1.1" 200 -
+INFO:werkzeug:127.0.0.1 - - [17/Oct/2023 07:28:39] "GET /view_logs HTTP/1.1" 200 -

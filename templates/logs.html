@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login Attempt Logs</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <style>
+        table {
+            width: 80%;
+            margin-top: 20px;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 12px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+<body>
+    <h1>Login Attempt Logs</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Date and Time</th>
+                <th>Username</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for log_entry in log_content.split('\n') %}
+                {% if log_entry %}
+                    <tr>
+                        <td>{{ log_entry.split('|')[0] }}</td>
+                        <td>{{ log_entry.split('|')[1] }}</td>
+                    </tr>
+                {% endif %}
+            {% endfor %}
+        </tbody>
+    </table>
+
+    <h2>Login Attempt Chart</h2>
+    <canvas id="loginAttemptsChart"></canvas>
+
+    <script>
+        const labels = ['Successful Logins', 'Failed Logins'];
+        const data = [10, 5];  // Replace with your actual data
+
+        const ctx = document.getElementById('loginAttemptsChart').getContext('2d');
+        const chart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: labels,
+                datasets: [{
+                    label: 'Login Attempts',
+                    data: data,
+                    backgroundColor: [
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 99, 132, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 99, 132, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
